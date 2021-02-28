@@ -1,4 +1,4 @@
-import MyMath from "./demoCLass";
+import MyMath from "./demoClass";
 
 describe("'add' from MyMath", () => {
   const cases = [
