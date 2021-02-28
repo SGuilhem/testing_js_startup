@@ -1,6 +1,6 @@
 
 
-#JS + Jest Startup
+# JS + Jest Startup
 
 This Project is a little startup setup to get started with js and Jest (for testing)
 
