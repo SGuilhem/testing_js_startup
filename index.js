@@ -6,4 +6,8 @@ function sub(a, b) {
   return a - b;
 }
 
-export { add, sub };
+function mult (a, b) {
+  return a * b;
+}
+
+export { add, sub, mult};
