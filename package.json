@@ -12,7 +12,8 @@
     "eslint": "^7.21.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "MIT"
