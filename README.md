@@ -18,4 +18,4 @@ npm test
 
 ## Bonus
 
-You have hte CI within github :)
+You have the CI within github :)
