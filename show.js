@@ -1,19 +1,14 @@
-class Show {
-  constructor(title, numberOfSeasons) {
+export default class Show {
+  constructor(title, numberOfSeasons = 0) {
     this.title = title;
     this.numberOfSeasons = numberOfSeasons;
     this.ratings = [];
-    this.averageRating = 0;
   }
 
   addRating(rating) {
-    if (rating < 0){
-      return;
+    if (rating >= 0 && rating <= 5) {
+      this.ratings.push(rating)
     }
-    if (rating > 5){
-      return;
-    }
-    this.ratings.push(rating);
   }
 
   getRatings() {
@@ -21,15 +16,12 @@ class Show {
   }
 
   averageRating() {
-    this.ratings;
-    for (const rating of ratings){
-      console.logs(rating);
+    if (this.ratings.length == 0) {
+      return 0;
     }
-    this.ratings / this.ratings.length;
     let sum = 0;
-    return 0;
+    this.ratings.forEach(rating => sum += rating);
+    return sum / this.ratings.length;
   }
 
 }
-
-export {Show };

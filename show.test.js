@@ -1,4 +1,4 @@
-import {Show } from "./show"
+import Show from "./show"
 
 test("Add number between one or five is added to Ratings", () => {
   var show=new Show("blabla show");
@@ -28,6 +28,7 @@ test("If rating is over 5 then it should be ignored", () => {
 test("Add number between one and five should calculate average rating", () => {
   var show=new Show("blabla show");
   show.addRating(1);
-  show.addRating(3)
+  show.addRating(3);
+  console.log(show.getRatings())
   expect(show.averageRating()).toBe(2);
 });
